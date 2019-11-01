@@ -39,7 +39,7 @@ class AmqpcppConan(ConanFile):
 
     def requirements(self):
         if int(self.majorver) >= 3:
-            self.requires.add("OpenSSL/1.0.2s@conan/stable")
+            self.requires.add("OpenSSL/1.1.1c@conan/stable")
 
     def build(self):
         cmake = CMake(self)
